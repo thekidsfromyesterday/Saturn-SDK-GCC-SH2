@@ -18,7 +18,7 @@ if [ ! -d binutils-${BINUTILSVER} ]; then
 fi
 
 if [ ! -d gcc-${GCCVER} ]; then
-	tar xvjpf $DOWNLOADDIR/gcc-${GCCVER}${GCCREV}.tar.bz2
+	tar xvzpf $DOWNLOADDIR/gcc-${GCCVER}${GCCREV}.tar.gz
 	if [ $? -ne 0 ]; then
 		rm -rf gcc-${GCCVER}
 		exit 1
